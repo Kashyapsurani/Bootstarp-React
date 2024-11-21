@@ -1,0 +1,148 @@
+
+/* Navbar styles */
+.nav-link:hover {
+  color: rgb(255, 145, 0) !important;
+}
+
+.container-fluid:first-child>a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+/* Custom styles for the card and form */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+  /* Center the card */
+}
+
+
+.img-fluid{
+    width: 100%;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img-top {
+  border-radius: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Responsive Form - 40% width on larger screens */
+form {
+  margin-top: 20px;
+  width: 40%;
+  margin: 20px auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    /* Take almost full width on mobile */
+  }
+}
+
+/* Custom footer style */
+.footer {
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
+/* Additional styles for transitions */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  color: var(--bs-navbar-brand-color);
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.nav-link:focus,
+.btn-primary:focus {
+  outline: 2px solid rgba(0, 123, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
